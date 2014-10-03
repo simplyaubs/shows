@@ -1,0 +1,13 @@
+<%= form_for @show do |f| %>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+  <p>
+    <%= f.label :length %>
+    <%= f.text_field :length %>
+  </p>
+  <p>
+    <%= f.submit 'Update show' %>
+  </p>
+<% end %>

@@ -15,7 +15,7 @@
 <% @shows.each do |show| %>
   <ul>
     <li>
-      <%= show.name %>
+      <%= link_to "#{show.name}", show_path(show) %>
       <%= show.length %>
     </li>
   </ul>
