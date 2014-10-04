@@ -29,6 +29,12 @@ class ShowsController < ApplicationController
     redirect_to shows_path(@show)
   end
 
+  def destroy
+    @show = Show.find(params[:id]).delete
+
+    redirect_to shows_path
+  end
+
   private
   def show_params
     params.require(:show).permit(:name, :length)

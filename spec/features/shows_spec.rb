@@ -33,4 +33,21 @@ feature 'CRUD shows' do
     expect(page).to have_content 'Shield'
     expect(page).to have_content 55
   end
+
+  scenario 'User can delete a show' do
+    visit root_path
+    expect(page).to have_content 'Welcome'
+    click_on 'Add a show'
+    fill_in 'Name', with: 'Master Chef'
+    fill_in 'Length', with: 45
+    click_on 'Add show'
+    expect(page).to have_content 'Master Chef'
+    expect(page).to have_content 45
+    click_on 'Master Chef'
+    expect(page).to have_content 'Master Chef'
+    expect(page).to have_content 45
+    click_on 'Delete'
+    expect(page).to_not have_content 'Master Chef'
+    expect(page).to_not have_content 45
+  end
 end
