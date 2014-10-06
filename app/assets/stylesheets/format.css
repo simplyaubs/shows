@@ -1,3 +1,7 @@
 body {
     background-color: hotpink;
 }
+
+h1, p {
+    color: blue;
+}
