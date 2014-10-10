@@ -9,3 +9,7 @@ h1, p {
 a {
     color: lime;
 }
+
+.center {
+    text-align: center;
+}
