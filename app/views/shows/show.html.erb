@@ -1,8 +1,10 @@
-<ul>
-  <li>
-    <%= @show.name %>, <%= @show.length %>
-  </li>
-</ul>
+<div class="center">
+  <ul>
+    <li>
+      <%= @show.name %>, <%= @show.length %>
+    </li>
+  </ul>
 
-<%= link_to 'Edit', edit_show_path %>
-<%= link_to 'Delete', show_path, method: :delete %>
+  <%= link_to 'Edit', edit_show_path %>
+  <%= link_to 'Delete', show_path, method: :delete %>
+</div>
