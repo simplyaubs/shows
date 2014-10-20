@@ -1,0 +1,15 @@
+body {
+    background-color: hotpink;
+}
+
+h1, p {
+    color: blue;
+}
+
+a {
+    color: lime;
+}
+
+.center {
+    text-align: center;
+}

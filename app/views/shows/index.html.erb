@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<div class="center">
+>>>>>>> 8bf2404bad32105dff96c6270e74808c9109a43e
 <%= form_for @show do |f| %>
   <p>
     <%= f.label :name %>
@@ -12,6 +16,7 @@
   </p>
 <% end %>
 
+<<<<<<< HEAD
 <%= @shows.each do |show| %>
   <ul>
     <li>
@@ -20,3 +25,14 @@
     </li>
   </ul>
 <% end %>
+=======
+<% @shows.each do |show| %>
+  <ul>
+    <li>
+      <%= link_to "#{show.name}", show_path(show) %>
+      <%= show.length %>
+    </li>
+  </ul>
+<% end %>
+</div>
+>>>>>>> 8bf2404bad32105dff96c6270e74808c9109a43e
