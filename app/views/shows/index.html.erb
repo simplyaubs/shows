@@ -1,38 +1,34 @@
-<<<<<<< HEAD
-=======
 <div class="center">
->>>>>>> 8bf2404bad32105dff96c6270e74808c9109a43e
-<%= form_for @show do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :length %>
-    <%= f.text_field :length %>
-  </p>
-  <p>
-    <%= f.submit 'Add show' %>
-  </p>
-<% end %>
+  <%= form_for @show do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
 
-<<<<<<< HEAD
-<%= @shows.each do |show| %>
-  <ul>
-    <li>
-      <%= show.name %>
-      <%= show.length %>
-    </li>
-  </ul>
-<% end %>
-=======
-<% @shows.each do |show| %>
-  <ul>
-    <li>
-      <%= link_to "#{show.name}", show_path(show) %>
-      <%= show.length %>
-    </li>
-  </ul>
-<% end %>
+    <p>
+      <%= f.label :length %>
+      <%= f.text_field :length %>
+    </p>
+
+    <p>
+      <%= f.submit 'Add show' %>
+    </p>
+  <% end %>
+
+  <%= @shows.each do |show| %>
+    <ul>
+      <li>
+        <%= show.name %>
+        <%= show.length %>
+      </li>
+    </ul>
+  <% end %>
+  <% @shows.each do |show| %>
+    <ul>
+      <li>
+        <%= link_to "#{show.name}", show_path(show) %>
+        <%= show.length %>
+      </li>
+    </ul>
+  <% end %>
 </div>
->>>>>>> 8bf2404bad32105dff96c6270e74808c9109a43e
