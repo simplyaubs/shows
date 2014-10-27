@@ -23,7 +23,7 @@
       </li>
     </ul>
   <% end %>
-  <%= @shows.each do |show| %>
+  <% @shows.each do |show| %>
     <ul>
       <li>
         <%= link_to "#{show.name}", show_path(show) %>
